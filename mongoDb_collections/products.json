@@ -1,0 +1,47 @@
+[{
+  "_id": {
+    "$oid": "63732cdcf7bbb0fff6cadab3"
+  },
+  "product_name": "dfgdfhhhhhhhhhhhhhhhhhhhh",
+  "description": "dfgfdhjghjhgj",
+  "price": "3455666666666666666",
+  "size": "dfgbnmjn",
+  "cate_Id": {
+    "$oid": "6371e57e16909a0b8e2b0f96"
+  },
+  "file": "cat-6.jpg",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1668492508626"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1668492508626"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63733f79d705f43f815b62cd"
+  },
+  "product_name": "zxdc",
+  "description": "xcvc",
+  "price": "555",
+  "size": "s m l",
+  "cate_Id": {
+    "$oid": "636e4094c337cf4fd0b5b257"
+  },
+  "file": "carousel-1.jpg",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1668497273154"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1668497492204"
+    }
+  },
+  "__v": 0
+}]

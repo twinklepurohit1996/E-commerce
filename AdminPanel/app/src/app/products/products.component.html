@@ -1,0 +1,172 @@
+
+<div class="main-content">
+    <div class="container-fluid">
+
+        <div class="row">
+            <div class="col-lg-12 col-md-12">
+                <div class="card">
+                    <div class="card-header card-header-warning">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <h4 class="card-title">Product List</h4>
+                                <p class="card-category">List of Products</p>
+                            </div>
+                            <div class="col-sm-6">
+                                <p  class="float-right"><button class="btn btn-danger"
+                                data-backdrop="static" data-keyboard="false" data-toggle="modal"
+                                data-target="#exampleModal" >Add Product</button></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body table-responsive">
+                        <table class="table table-hover">
+                            <thead class="text-dark font-weight-bold">
+                                <th>ID</th>
+                                <th>Image</th>
+                                <th>Product Name</th>
+                                <th>Price</th>
+                                <th>Size</th>
+                                <th>Categories Name</th>
+                                <th>Description</th>
+                                <th>Action</th>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    
+                                    <tr *ngFor="let pro of productInfo; let i = index" [attr.data-index]="i">
+                                        <td>{{i+1}}</td>
+                                        <td>
+                                            <img class="avatar border-gray" width="45px" height="45px" style="border-radius:50%;"  src="{{pro.file}}"
+                                            alt="Product Image" />
+                                        </td>
+                                        <td>{{pro.product_name}}</td>
+                                        <td>{{pro.price}}</td>
+                                        <td>{{pro.size}}</td>
+                                        <td>{{pro.cate_Id.cate_name}}</td>
+                                        <td>{{pro.description}}</td>
+                                        <td role="button">
+                                            <i class="fa fa-edit mx-2" (click)="onEdit(pro._id)" data-toggle="modal"
+                                            data-target="#exampleModal"></i>
+                                            <i class="fa fa-trash mx-2" (click)="deleteProduct(pro._id)"></i>
+                                        </td>
+                                        <td role="button"></td>
+
+                                    </tr>
+                               
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel" (click) ="onAdd()" *ngIf="isAdd">Add Product</h5>
+                            <h5 class="modal-title" id="exampleModalLabel" *ngIf="!isAdd">Edit Product</h5>
+
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"
+                            (click)="onReset()">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <form [formGroup]="addProductForm" (ngSubmit)="addEditProduct();">
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                            <label>Product Name</label>
+                                            <input type="text" class="form-control" formControlName="product_name"
+                                                placeholder="Enter your Product name">
+                                        </div>
+                                        <ng-container *ngIf="submitted">
+                                            <ng-container *ngFor="let v of validationMessages.product_name">
+                                                <p *ngIf="addProductForm.get('product_name').hasError(v.type)" class="text-danger"
+                                                    [innerText]="v.message"></p>
+                                            </ng-container>
+                                        </ng-container>
+                                        <div class="form-group">
+                                            <label>Categories Name</label><br>
+                                              <select formControlName="cate_Id" class="form-control">
+                                                <option value="null" selected>Select Categories</option>
+                                                <option *ngFor="let cate of cateData;" value="{{cate._id}}">{{cate.cate_name}}</option>
+                                            </select>
+                                        </div>
+                                        <ng-container *ngIf="submitted">
+                                            <ng-container *ngFor="let v of validationMessages.cate_Id">
+                                                <p *ngIf="addProductForm.get('cate_Id').hasError(v.type)" class="text-danger"
+                                                    [innerText]="v.message"></p>
+                                            </ng-container>
+                                        </ng-container>
+                                        <div class="form-group">
+                                            <label>Description</label>
+                                            <input type="text" class="form-control" formControlName="description"
+                                                placeholder="Enter your description">
+                                        </div>
+                                        <ng-container *ngIf="submitted">
+                                            <ng-container *ngFor="let v of validationMessages.description">
+                                                <p *ngIf="addProductForm.get('description').hasError(v.type)" class="text-danger"
+                                                    [innerText]="v.message"></p>
+                                            </ng-container>
+                                        </ng-container>
+                                    </div>
+                                    <div class="col-sm-6 ">
+                                        
+                                        <div class="form-group">
+                                            <label>Price</label>
+                                            <input type="text" class="form-control" formControlName="price"
+                                                placeholder="Enter your price">
+                                        </div>
+                                        <ng-container *ngIf="submitted">
+                                            <ng-container *ngFor="let v of validationMessages.price">
+                                                <p *ngIf="addProductForm.get('price').hasError(v.type)" class="text-danger"
+                                                    [innerText]="v.message"></p>
+                                            </ng-container>
+                                        </ng-container>
+                                        <div class="form-group">
+                                            <label>Size</label>
+
+                                            <!-- <input type="text" class="form-control" formControlName="size"
+                                                placeholder="Enter your size"> -->
+                                                
+                                        </div>
+                                        <ng-container *ngIf="submitted">
+                                            <ng-container *ngFor="let v of validationMessages.size">
+                                                <p *ngIf="addProductForm.get('size').hasError(v.type)" class="text-danger"
+                                                    [innerText]="v.message"></p>
+                                            </ng-container>
+                                        </ng-container>
+                                        <div class="form-group">
+                                            <label>Categories Image</label>
+                                            <input id="input-file-id" type="file" formControlName="file"
+                                                (change)="onFileSelected($event)" />
+                                        </div>
+                                        <ng-container *ngIf="submitted">
+                                            <ng-container *ngFor="let v of validationMessages.file">
+                                                <p *ngIf="addProductForm.get('file').hasError(v.type)" class="text-danger"
+                                                    [innerText]="v.message"></p>
+                                            </ng-container>
+                                        </ng-container>
+                                        <div class="modal-footer ">
+                                            <!-- <button type="reset" class="btn btn-secondary" data-dismiss="modal">Close</button>  -->
+                                            <input type="submit" value="Insert" *ngIf="isAdd" class="btn btn-info btn-fill pull-right" />
+                                            <input type="submit" value="Update" *ngIf="!isAdd" class="btn btn-info btn-fill pull-right" />
+    
+                                            <button type="reset" (click)="onReset()" class="btn btn-primary">Reset</button> 
+                                        <div class="clearfix"></div>
+                                    </div>
+                                </div>
+
+                        </div>
+                    </form>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>

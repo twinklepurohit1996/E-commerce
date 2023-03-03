@@ -1,0 +1,301 @@
+[{
+  "_id": {
+    "$oid": "636ca7b9e3b7cb28e1a66332"
+  },
+  "email": "twinklepurohitjd6@gmail.com",
+  "password": "$2b$10$J3o7fzPbZJLi4GHFpNCCW.lO8uGPRokA4R9Pq6bJBVPuacsRa0uLq",
+  "name": "Twinkle Purohit",
+  "mob": {
+    "$numberLong": "9799914487"
+  },
+  "xgen": "Female",
+  "address": "4f/25 New Power House Road , Shastri Nagar , Jodhpur , Rajasthan",
+  "role": "Administrator",
+  "dob": {
+    "$date": {
+      "$numberLong": "847238400000"
+    }
+  },
+  "file": "product-1.jpg",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1668065209372"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1677823916150"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "636def8b676d68886b63467d"
+  },
+  "email": "prasoon@gmail.com",
+  "password": "$2b$10$3lK9c1LnxRPEe5vvOzMeO.3JfhVdxd.bdhwG0JpQtQmheopHOVr4G",
+  "name": "Prasoon",
+  "mob": {
+    "$numberLong": "9874561230"
+  },
+  "xgen": "Male",
+  "address": "test drfg ",
+  "role": "Store Manager",
+  "dob": {
+    "$date": {
+      "$numberLong": "819331200000"
+    }
+  },
+  "file": "product-3.jpg",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1668149131463"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1668161820833"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "636e02717643c4d46d50b8ff"
+  },
+  "email": "kapilJain@gmail.com",
+  "password": "$2b$10$UJaCEQWRR883X/jgZN1Xkeqalvpr2O2Z6oa1Bj8NjvqDsmpwIWt7O",
+  "name": "Kapil Jain",
+  "mob": {
+    "$numberLong": "9414152448"
+  },
+  "xgen": "Male",
+  "address": "Ratanada , Jodhpur",
+  "role": "Vendor",
+  "dob": {
+    "$date": {
+      "$numberLong": "1131062400000"
+    }
+  },
+  "file": "product-2.jpg",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1668153969723"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1668161872262"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "636e165967e5a78030c8a032"
+  },
+  "email": "test@gmail.com",
+  "password": "$2b$10$0iUMtyzCnOpAYsE1k3CGVOruQhQyyyzkJB6G/o5X2pQUL7OliH7U2",
+  "name": "Leanne Graham",
+  "mob": {
+    "$numberLong": "9876548229"
+  },
+  "xgen": "Male",
+  "address": "Jaipur",
+  "role": "Store Manager",
+  "dob": {
+    "$date": {
+      "$numberLong": "977184000000"
+    }
+  },
+  "file": "product-6.jpg",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1668159065434"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1668161881902"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "636e460e85da3eb28a56f58a"
+  },
+  "email": "twinkle@gmail.com",
+  "password": "$2b$10$ssJNkhKkxM464y9j828FYOzU1tYqPlMW9y3OR.G/.ZUQ4c0bFHfHy",
+  "name": "Twinkle Purohit",
+  "mob": {
+    "$numberLong": "9799914487"
+  },
+  "xgen": "Female",
+  "address": "Jodhpur",
+  "role": "Administrator",
+  "dob": {
+    "$date": {
+      "$numberLong": "850953600000"
+    }
+  },
+  "file": "cat-2.jpg",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1668171278809"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1668171410367"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6374d03a208f42bdd2b7909f"
+  },
+  "email": "rishi@gmail.com",
+  "password": "$2b$10$wQenrA.fcsByzdD223a8GOg2l8f6XpDY/WWo34pvJiDWpa3BfeM2e",
+  "name": "Rishi Kalla ",
+  "mob": {
+    "$numberLong": "9799914487"
+  },
+  "xgen": "Male",
+  "address": "Jalorei Gate",
+  "role": "Customer",
+  "dob": {
+    "$date": {
+      "$numberLong": "1667520000000"
+    }
+  },
+  "file": "vendor-2.jpg",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1668599866958"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1668599866958"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6374d14ee257e31dd40fced9"
+  },
+  "email": "ankit@gmail.com",
+  "password": "$2b$10$MXsyOmoswqSEAUka7.xKnunlZ6CrvlKjl6yfO2F6mR9gsjd5GEZka",
+  "name": "Ankit Singh",
+  "mob": {
+    "$numberLong": "97654812330"
+  },
+  "xgen": "Male",
+  "address": "Kamla Nehru nagar",
+  "role": "Customer",
+  "dob": {
+    "$date": {
+      "$numberLong": "1668038400000"
+    }
+  },
+  "file": "product-2.jpg",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1668600142496"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1668600142496"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6374d2b8e257e31dd40fcedc"
+  },
+  "email": "prasoon@gmail.com`",
+  "password": "$2b$10$pnC7x2Nvf04q9nkT1OMA3.hhjDMMgpLnRbzqSI75NI1EnoKJtN8yO",
+  "name": "prasoon",
+  "mob": {
+    "$numberLong": "9874561230"
+  },
+  "xgen": "Male",
+  "address": "Hello",
+  "role": "Customer",
+  "dob": {
+    "$date": {
+      "$numberLong": "689385600000"
+    }
+  },
+  "file": "product-8.jpg",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1668600504489"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1668600504489"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6374d3a2e257e31dd40fcedf"
+  },
+  "email": "liza@gmail.com",
+  "password": "$2b$10$Cbw2G.EvkEw5Sygw1zZ3VusmmokVyYZ3NUt2Fo6xa5zvYQtXPZnWu",
+  "name": "liza",
+  "mob": {
+    "$numberLong": "3210456980"
+  },
+  "xgen": "Female",
+  "address": "London",
+  "role": "Customer",
+  "dob": {
+    "$date": {
+      "$numberLong": "1668038400000"
+    }
+  },
+  "file": "cat-2.jpg",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1668600738557"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1668600738557"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6374d61be257e31dd40fcee7"
+  },
+  "email": "jabds@gmail.com",
+  "password": "$2b$10$2pnrONdS9QAUP6dtOujJse2olFp/HLj8lwjdF.4cAmG0nbpyHoFQy",
+  "name": "jsbd",
+  "mob": {
+    "$numberLong": "8561844545"
+  },
+  "xgen": "male",
+  "address": "asdas",
+  "role": "Customer",
+  "dob": {
+    "$date": {
+      "$numberLong": "1672444800000"
+    }
+  },
+  "file": "cat-5.jpg",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1668601371400"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1668601371400"
+    }
+  },
+  "__v": 0
+}]

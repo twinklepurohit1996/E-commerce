@@ -1,0 +1,48 @@
+
+<app-navbar></app-navbar>
+
+ <!-- Contact Start -->
+ <div class="container-fluid">
+    <div class="text-center mb-4">
+        <h2 class="section-title px-5"><span class="px-2">Login Page</span></h2>
+    </div>
+    <div class="row ">
+        <div class="col-sm-3"></div>
+        <div class="col-lg-6 card px-5 py-5" style="background-color:rgba(180, 147, 153, 0.288);">
+            <div class="contact-form ">
+                <form [formGroup]="userLogin" (ngSubmit)="login();">
+                    <div class="control-group">
+                        <input type="email" class="form-control" formControlName="email" placeholder="Your Email"
+                            required="required" data-validation-required-message="Please enter your email" />
+                        <p class="help-block text-danger"></p>
+                    </div>
+                    <ng-container *ngIf="submitted">
+                        <ng-container *ngFor="let v of validationMessages.email">
+                            <p *ngIf="userLogin.get('email')?.hasError(v.type)" class="text-danger"
+                                [innerText]="v.message"></p>
+                        </ng-container>
+                    </ng-container>
+                    <div class="control-group">
+                        <input type="text" class="form-control" formControlName="password" placeholder="Password"
+                            required="required" data-validation-required-message="Please enter a subject" />
+                        <p class="help-block text-danger"></p>
+                    </div>
+                    <ng-container *ngIf="submitted">
+                        <ng-container *ngFor="let v of validationMessages.password">
+                            <p *ngIf="userLogin.get('password')?.hasError(v.type)" class="text-danger"
+                                [innerText]="v.message"></p>
+                        </ng-container>
+                    </ng-container>
+                    <div class="text-center">
+                        <button class="btn btn-primary py-2 px-4" type="submit" >Login</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="col-sm-3"></div>
+
+        
+
+    </div>
+</div>
+<!-- Contact End -->
